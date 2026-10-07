@@ -4,7 +4,7 @@
 const puppeteer = require('puppeteer-core');
 const url = process.argv[2] || 'https://sineminflux.github.io/lethal-trifecta/';
 const shots = process.argv[3] === 'shots';
-const sizes = [[708, 400], [629, 354], [560, 315], [375, 211], [629, 416]];
+const sizes = [[708, 400], [629, 354], [560, 315], [375, 211], [629, 416], [708, 520]];
 const chrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const states = [[], [0], [1], [2], [0, 1], [0, 2], [1, 2], ['ask'], ['all']];
 const wait = ms => new Promise(r => setTimeout(r, ms));
